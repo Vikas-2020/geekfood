@@ -13,6 +13,9 @@ const Contact = () => {
   const onSubmit = (data) => {
     console.log("Form Data:", data);
     reset(); // Clear the form after submission
+    fetch("https://formsubmit.co/alpha.alphapandey@gmail.com", data, {
+      method: "POST",
+    });
   };
 
   return (
@@ -26,7 +29,7 @@ const Contact = () => {
         <form
           className="contact-form"
           onSubmit={handleSubmit(onSubmit)}
-          action="https://formsubmit.co/alpha.alphapandey@gmail.com"
+          // action="https://formsubmit.co/alpha.alphapandey@gmail.com"
           method="POST"
         >
           <label htmlFor="name">Name</label>
