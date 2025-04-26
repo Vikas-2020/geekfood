@@ -13,7 +13,7 @@ const Contact = () => {
   const onSubmit = (data) => {
     console.log("Form Data:", data);
     reset(); // Clear the form after submission
-    fetch("https://formsubmit.co/alpha.alphapandey@gmail.com", data, {
+    fetch("https://formsubmit.co/dd4d01d2da866e7c612ce2e34b608a09", data, {
       method: "POST",
     });
   };
